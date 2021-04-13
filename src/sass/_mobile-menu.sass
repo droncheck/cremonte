@@ -1,0 +1,30 @@
+.mobile-menu
+  display: none
+  position: fixed
+  top: -300%
+  left: 0
+  right: 0
+  z-index: 99
+  padding-top: 4.75rem
+  background: #7e356d
+  transition: all 0.25s
+  max-height: 100vh
+  overflow-y: auto
+  &.active
+    top: 0
+  &__list
+    &-item
+      padding: 0.9375rem 15px
+      border-bottom: 1px solid #893775
+      &:last-child
+        border: none
+  &__link,
+  &__btn
+    font-size: 1.125em
+    font-weight: 700
+    color: #fff
+  &__btn
+    text-decoration: underline
+
+  @media (max-width: 991.98px)
+    display: block

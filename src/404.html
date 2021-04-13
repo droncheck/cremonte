@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Cremonte | 404</title>
+  <base href="http://bazarov-developer.ru/cremonte/">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.png">
+  <!-- <meta property="og:image" content="images/dest/preview.jpg"> -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+  <header class="header animate__animated animate__fadeIn">
+    <div class="container header__container">
+      <div class="row header__row">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="Logo" class="img-responsive header__logo-img">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="about.html" class="header__nav-link font-size-26 font-weight-700">
+                О CreMonte
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="production.html" class="header__nav-link font-size-26 font-weight-700">
+                Продукция
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="recipes.html" class="header__nav-link font-size-26 font-weight-700">
+                Рецепты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="horeca.html" class="header__nav-link font-size-26 font-weight-700">
+                HoReCa
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="Где купить" data-href="buy" class="header__nav-link font-size-26 font-weight-700">
+                Где купить
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn" data-popup-btn="default">
+          Написать нам
+        </button>
+        <div class="header__burger" data-menu-btn="true">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__list-item">
+        <a href="about.html" class="mobile-menu__link">О CreMonte</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="production.html" class="mobile-menu__link">Продукция</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="recipes.html" class="mobile-menu__link">Рецепты</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="horeca.html" class="mobile-menu__link">HoReCa</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="Где купить" data-href="buy" class="mobile-menu__link">Где купить</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <button class="mobile-menu__btn" data-popup-btn="default">
+          Написать нам
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="popup__overlay"></div>
+
+  <div class="popup__wrap" data-popup-name="default" data-popup-close="true">
+
+    <div class="popup">
+      <button class="popup__close-btn" data-popup-close="true"></button>
+      <div class="popup__heading font-size-48 font-weight-700 accent-font text-center">
+        Написать нам
+      </div>
+      <form class="popup__form">
+        <label class="popup__label">
+          <input type="text" class="input popup__input" placeholder="Ваше имя">
+        </label>
+        <label class="popup__label">
+          <input type="email" class="input popup__input" placeholder="Ваш email">
+        </label>
+        <label class="popup__label">
+          <input type="tel" class="input popup__input" placeholder="+7 (___) ___ __-__">
+        </label>
+        <label class="popup__label">
+          <textarea class="textarea popup__textarea" placeholder="Сообщение"></textarea>
+        </label>
+        <img src="img/capcha.png" alt="" class="img-responsive popup__capcha">
+        <button class="btn popup__btn">
+          <span class="btn__text">Отправить</span>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <main id="top" class="main main--light main--error">
+
+    <section class="section error">
+      <div class="container error__container">
+        <img src="img/error__img.svg" alt="" class="img-responsive error__img">
+        <div class="error__heading font-size-30 font-weight-700 text-center">
+          Страница не найдена :( <br>Пожалуйсте перепроверьте URL или вернитесь на главную
+        </div>
+        <div class="text-center">
+          <a href="index.html" class="btn error__btn">
+            <span class="btn__text">
+              На главную
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <script src="js/index.min.js"></script>
+
+</body>
+</html>

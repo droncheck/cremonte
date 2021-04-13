@@ -1,0 +1,87 @@
+.popup
+  position: relative
+  max-width: 43.125rem
+  margin-left: auto
+  margin-right: auto
+  padding: 3.5625rem 6.25rem
+  border-radius: 1.25rem
+  background: #fff
+  &__heading
+    margin-bottom: 2.5rem
+    color: $brown
+  &__subheading
+    margin-bottom: 1.25rem
+  &__close-btn
+    position: absolute
+    top: 1.25rem
+    right: 1.25rem
+    width: 2rem
+    height: 2rem
+    background: url(../img/close.svg) no-repeat center / 100%
+  &__btn
+    display: flex
+    width: 22.0625rem
+    margin-left: auto
+    margin-right: auto
+    margin-top: 2.3125rem
+  &__label
+    margin-bottom: 1.25rem
+  &__input,
+  &__textarea,
+  &__capcha
+    width: 22.0625rem
+    margin-left: auto
+    margin-right: auto
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 199
+    background: #000
+    opacity: 0
+    pointer-events: none
+    transition: all 0.25s
+    &.active
+      opacity: 0.5
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 200
+    padding: 2.8125rem 0
+    overflow-y: auto
+    opacity: 0
+    pointer-events: none
+    transition: all 0.25s
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &.scroll
+      display: block
+
+  @media (max-width: 991.98px)
+    min-height: 100vh
+    padding: 3.625rem 15px 100px
+    border-radius: 0
+    &__heading
+      margin-bottom: 1.25rem
+    &__input,
+    &__textarea,
+    &__btn,
+    &__capcha
+      width: 100%
+    &__btn
+      margin-top: 0
+    &__label
+      margin-bottom: 0.625rem
+    &__close-btn
+      right: 15px
+    &__wrap
+      padding: 0

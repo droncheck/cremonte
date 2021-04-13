@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Cremonte | Главная</title>
+  <base href="http://bazarov-developer.ru/cremonte/">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.png">
+  <!-- <meta property="og:image" content="images/dest/preview.jpg"> -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+  <header class="header animate__animated animate__fadeIn">
+    <div class="container header__container">
+      <div class="row header__row">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.svg" alt="Logo" class="img-responsive header__logo-img">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="about.html" class="header__nav-link font-size-26 font-weight-700">
+                О CreMonte
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="production.html" class="header__nav-link font-size-26 font-weight-700">
+                Продукция
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="recipes.html" class="header__nav-link font-size-26 font-weight-700">
+                Рецепты
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="horeca.html" class="header__nav-link font-size-26 font-weight-700">
+                HoReCa
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="Где купить" data-href="buy" class="header__nav-link font-size-26 font-weight-700">
+                Где купить
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn" data-popup-btn="default">
+          Написать нам
+        </button>
+        <div class="header__burger" data-menu-btn="true">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__list-item">
+        <a href="about.html" class="mobile-menu__link">О CreMonte</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="production.html" class="mobile-menu__link">Продукция</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="recipes.html" class="mobile-menu__link">Рецепты</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="horeca.html" class="mobile-menu__link">HoReCa</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <a href="Где купить" data-href="buy" class="mobile-menu__link">Где купить</a>
+      </li>
+      <li class="mobile-menu__list-item">
+        <button class="mobile-menu__btn" data-popup-btn="default">
+          Написать нам
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="popup__overlay"></div>
+
+  <div class="popup__wrap" data-popup-name="default" data-popup-close="true">
+
+    <div class="popup">
+      <button class="popup__close-btn" data-popup-close="true"></button>
+      <div class="popup__heading font-size-48 font-weight-700 accent-font text-center">
+        Написать нам
+      </div>
+      <form class="popup__form">
+        <label class="popup__label">
+          <input type="text" class="input popup__input" placeholder="Ваше имя">
+        </label>
+        <label class="popup__label">
+          <input type="email" class="input popup__input" placeholder="Ваш email">
+        </label>
+        <label class="popup__label">
+          <input type="tel" class="input popup__input" placeholder="+7 (___) ___ __-__">
+        </label>
+        <label class="popup__label">
+          <textarea class="textarea popup__textarea" placeholder="Сообщение"></textarea>
+        </label>
+        <img src="img/capcha.png" alt="" class="img-responsive popup__capcha">
+        <button class="btn popup__btn">
+          <span class="btn__text">Отправить</span>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <main class="main" id="top">
+
+    <section class="section cover" style="background-image: url(img/cover-bg-1.svg);">
+      <div class="container cover__container">
+        <div class="row cover__row">
+          <div class="cover__text-wrap animate__animated animate__fadeInLeft">
+            <h1 class="cover__heading font-size-52 font-weight-700 accent-font">
+              Вкусный и сытный завтрак с орехово-шоколадной пастой CreMonte
+            </h1>
+            <div class="cover__text font-size-22">
+              Cursus viverra gravida nisl cursus convallis gravida. Mattis in leo in laoreet vitae. Enim sapien odio sed est
+            </div>
+            <a href="production.html" class="btn cover__btn">
+              <span class="btn__text">Продукция</span>
+            </a>
+          </div>
+          <div class="cover__img-wrap animate__animated animate__fadeInRight">
+            <img src="img/cover__img-1.png" alt="Img" class="img-responsive img-width cover__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gains">
+      <div class="container gains__container">
+        <div class="gains__slider-wrap">
+          <div class="gains__slider swiper-container wow animate__animated animate__fadeIn" data-slides-per-view="4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gains__item">
+                <div class="gains__item-img-wrap">
+                  <div class="gains__item-img-circle"></div>
+                  <img src="img/gains__item-img-1.png" alt="Img" class="gains__item-img img-responsive">
+                </div>
+                <div class="gains__item-heading font-size-26 font-weight-700">
+                  Интересные рецепты
+                </div>
+                <div class="gains__item-text font-size-22">
+                  Amet et aliquet eu sagittis, eu sit scelerisque. Consectetur.
+                </div>
+              </div>
+              <div class="swiper-slide gains__item">
+                <div class="gains__item-img-wrap">
+                  <div class="gains__item-img-circle"></div>
+                  <img src="img/gains__item-img-2.png" alt="Img" class="gains__item-img img-responsive">
+                </div>
+                <div class="gains__item-heading font-size-26 font-weight-700">
+                  Термостабильность
+                </div>
+                <div class="gains__item-text font-size-22">
+                  Vestibulum ipsum praesent turpis orci mollis dis nulla et.
+                </div>
+              </div>
+              <div class="swiper-slide gains__item">
+                <div class="gains__item-img-wrap">
+                  <div class="gains__item-img-circle"></div>
+                  <img src="img/gains__item-img-3.png" alt="Img" class="gains__item-img img-responsive">
+                </div>
+                <div class="gains__item-heading font-size-26 font-weight-700">
+                  Вкусные завтраки
+                </div>
+                <div class="gains__item-text font-size-22">
+                  Enim justo, eget proin cras amet, sodales sed. Sit et.
+                </div>
+              </div>
+              <div class="swiper-slide gains__item">
+                <div class="gains__item-img-wrap">
+                  <div class="gains__item-img-circle"></div>
+                  <img src="img/gains__item-img-4.png" alt="Img" class="gains__item-img img-responsive">
+                </div>
+                <div class="gains__item-heading font-size-26 font-weight-700">
+                  Интересные рецепты
+                </div>
+                <div class="gains__item-text font-size-22">
+                  Amet at erat tincidunt dolor sit nunc id amet ridiculus.
+                </div>
+              </div>
+              <div class="swiper-slide gains__item">
+                <div class="gains__item-img-wrap">
+                  <div class="gains__item-img-circle"></div>
+                  <img src="img/gains__item-img-5.png" alt="Img" class="gains__item-img img-responsive">
+                </div>
+                <div class="gains__item-heading font-size-26 font-weight-700">
+                  Термостабильность
+                </div>
+                <div class="gains__item-text font-size-22">
+                  Porttitor laoreet ultrices interdum nunc. Posuere.
+                </div>
+              </div>
+              <div class="swiper-slide gains__item">
+                <div class="gains__item-img-wrap">
+                  <div class="gains__item-img-circle"></div>
+                  <img src="img/gains__item-img-6.png" alt="Img" class="gains__item-img img-responsive">
+                </div>
+                <div class="gains__item-heading font-size-26 font-weight-700">
+                  Вкусные завтраки
+                </div>
+                <div class="gains__item-text font-size-22">
+                  Id mattis dolor molestie et aliquam est viverra diam.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gains__slider-arrows arrows">
+            <button class="arrow arrow--prev gains__slider-arrow gains__slider-arrow--prev"></button>
+            <button class="arrow arrow--next gains__slider-arrow gains__slider-arrow--next"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section production">
+      <div class="container production__container text-center">
+        <h2 class="production__heading font-size-48 font-weight-700 accent-font wow animate__animated animate__fadeIn">
+          Продукция CreMonte
+        </h2>
+        <div class="production__slider swiper-container wow animate__animated animate__fadeInUp">
+          <div class="swiper-wrapper">
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-1.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-2.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-3.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                13% ореха 400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-4.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-5.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-6.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                13% ореха 400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-7.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                13% ореха 400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-8.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                13% ореха 400g стекло
+              </div>
+            </a>
+            <a href="product.html" class="swiper-slide production__item">
+              <div class="production__item-img-wrap">
+                <img src="img/production__item-img-9.png" alt="Img" class="img-responsive production__item-img">
+              </div>
+              <div class="production__item-heading font-size-26 font-weight-700">
+                <div class="production__item-link">
+                  Cremonte Cacao
+                </div>
+              </div>
+              <div class="production__item-text font-size-22">
+                13% ореха 400g стекло
+              </div>
+            </a>
+          </div>
+          <button class="arrow arrow--prev production__slider-arrow production__slider-arrow--prev"></button>
+          <button class="arrow arrow--next production__slider-arrow production__slider-arrow--next"></button>
+        </div>
+        <a href="Где купить?" data-href="buy" class="btn production__btn wow animate__animated animate__fadeIn">
+          <span class="btn__text">Где купить?</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section facts">
+      <img src="img/parallax-1.png" alt="" class="parallax">
+      <img src="img/parallax-2.png" alt="" class="parallax">
+      <div class="container facts__container">
+        <h2 class="facts__heading font-size-48 font-weight-700 accent-font text-center wow animate__animated animate__fadeIn">
+          <span class="facts__heading-text">Несколько фактов о CreMonte</span>
+        </h2>
+        <div class="facts__slider swiper-container wow animate__animated animate__fadeIn">
+          <img src="img/facts-img.png" alt="" class="facts__slider-img">
+          <div class="swiper-wrapper facts__slider-row">
+            <div class="swiper-slide facts__item wow animate__animated animate__fadeInLeft">
+              <div class="facts__item-heading font-size-26 font-weight-700">
+                Широкая линейка из 11 продуктов
+              </div>
+              <div class="facts__item-text font-size-22">
+                Cursus viverra gravida nisl cursus convallis gravida. Mattis in leo in laoreet vitae. Enim sapien odio sed est,
+              </div>
+            </div>
+            <div class="swiper-slide facts__item wow animate__animated animate__fadeInRight">
+              <div class="facts__item-heading font-size-26 font-weight-700">
+                Натуральный состав продукта
+              </div>
+              <div class="facts__item-text font-size-22">
+                Fermentum ac, eu lacus, euismod egestas. Sem in aenean habitant vestibulum vitae risus consectetur eu.
+              </div>
+            </div>
+            <div class="swiper-slide facts__item wow animate__animated animate__fadeInLeft">
+              <div class="facts__item-heading font-size-26 font-weight-700">
+                Наличие уникальной упаковки
+              </div>
+              <div class="facts__item-text font-size-22">
+                Justo aliquet faucibus et auctor odio consequat duis at diam. Tortor quisque potenti fermentum.
+              </div>
+            </div>
+            <div class="swiper-slide facts__item wow animate__animated animate__fadeInRight">
+              <div class="facts__item-heading font-size-26 font-weight-700">
+                Не разоряет кошелек
+              </div>
+              <div class="facts__item-text font-size-22">
+                Neque, non ac viverra sed amet semper pellentesque id. At tristique tellus condimentum id mi nulla. Eu varius.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="facts__slider-arrows arrows">
+          <button class="arrow arrow--prev facts__slider-arrow facts__slider-arrow--prev"></button>
+          <button class="arrow arrow--next facts__slider-arrow facts__slider-arrow--next"></button>
+        </div>
+        <div class="text-center">
+          <a href="production.html" class="btn facts__btn">
+            <span class="btn__text">Продукция</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recipes">
+      <div class="container recipes__container text-center">
+        <h2 class="recipes__heading font-size-48 font-weight-700 accent-font text-center wow animate__animated animate__fadeIn">
+          Лучшие рецепты с CreMonte
+        </h2>
+        <div class="recipes__slider swiper-container wow animate__animated animate__fadeInUp">
+          <div class="swiper-wrapper">
+            <a href="recipe.html" class="swiper-slide recipes__item">
+              <div class="recipes__item-img" style="background-image: url(img/recipes__item-img-1.jpg);"></div>
+              <div class="recipes__item-link font-size-26 font-weight-700">
+                Песочное печенье с Cremonte Cacao
+              </div>
+            </a>
+            <a href="recipe.html" class="swiper-slide recipes__item">
+              <div class="recipes__item-img" style="background-image: url(img/recipes__item-img-2.jpg);"></div>
+              <div class="recipes__item-link font-size-26 font-weight-700">
+                Выпечка с Cremonte duo
+              </div>
+            </a>
+            <a href="recipe.html" class="swiper-slide recipes__item">
+              <div class="recipes__item-img" style="background-image: url(img/recipes__item-img-3.jpg);"></div>
+              <div class="recipes__item-link font-size-26 font-weight-700">
+                Воздушные Мафины с Cremonte Cacao
+              </div>
+            </a>
+            <a href="recipe.html" class="swiper-slide recipes__item">
+              <div class="recipes__item-img" style="background-image: url(img/recipes__item-img-1.jpg);"></div>
+              <div class="recipes__item-link font-size-26 font-weight-700">
+                Песочное печенье с Cremonte Cacao
+              </div>
+            </a>
+            <a href="recipe.html" class="swiper-slide recipes__item">
+              <div class="recipes__item-img" style="background-image: url(img/recipes__item-img-2.jpg);"></div>
+              <div class="recipes__item-link font-size-26 font-weight-700">
+                Выпечка с Cremonte duo
+              </div>
+            </a>
+            <a href="recipe.html" class="swiper-slide recipes__item">
+              <div class="recipes__item-img" style="background-image: url(img/recipes__item-img-3.jpg);"></div>
+              <div class="recipes__item-link font-size-26 font-weight-700">
+                Воздушные Мафины с Cremonte Cacao
+              </div>
+            </a>
+          </div>
+          <div class="recipes__slider-arrows arrows">
+            <button class="arrow arrow--prev recipes__slider-arrow recipes__slider-arrow--prev"></button>
+            <button class="arrow arrow--next recipes__slider-arrow recipes__slider-arrow--next"></button>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="recipes.html" class="btn recipes__btn wow animate__animated animate__fadeIn">
+            <span class="btn__text">Все рецепты</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy" class="section buy">
+      <div class="container buy__container" data-filter-parent>
+        <h2 class="buy__heading font-size-48 font-weight-700 accent-font text-center wow animate__animated animate__fadeIn">
+          Где купить
+        </h2>
+        <div class="buy__filter wow animate__animated animate__fadeIn">
+          <button data-filter-btn="1" class="buy__filter-btn font-size-22 active">В интернете</button>
+          <button data-filter-btn="2" class="buy__filter-btn font-size-22">В магазине</button>
+        </div>
+        <div class="swiper-container buy__slider">
+          <div class="swiper-wrapper" data-filter-wrapper>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-1.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-2.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-3.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-4.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-5.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-1.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-2.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-3.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-4.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="1" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-5.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-5.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-4.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-4.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-2.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-1.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-5.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-4.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-4.png" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-2.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+            <a data-filter-item="2" href="#" target="_blank" class="swiper-slide buy__item">
+              <img src="img/buy__item-logo-1.svg" alt="Logo" class="img-responsive buy__item-logo">
+            </a>
+          </div>
+          <div class="arrows buy__slider-arrows">
+            <button class="arrow arrow--prev buy__slider-arrow buy__slider-arrow--prev"></button>
+            <button class="arrow arrow--next buy__slider-arrow buy__slider-arrow--next"></button>
+          </div>
+        </div>
+        <img src="img/buy__img.png" alt="Img" class="img-responsive buy__img wow animate__animated animate__fadeInUp">
+      </div>
+    </section>
+
+    <footer class="footer wow animate__animated animate__fadeIn">
+      <div class="container footer__container">
+        <div class="row footer__row">
+          <div class="footer__main">
+            <div class="row">
+              <a href="#" class="footer__link font-size-22" target="_blank">
+                Пользовательское соглашение
+              </a>
+              <a href="#" class="footer__link font-size-22" target="_blank">
+                Политика конфиденциальности
+              </a>
+              <a href="#" class="footer__link font-size-22" target="_blank">
+                Политика cookies
+              </a>
+            </div>
+            <div class="row">
+              <div class="footer__text font-size-18">
+                © 2021 CreMonte®. Все права защищены.
+              </div>
+              <button class="footer__btn font-size-18">
+                Написать нам
+              </button>
+              <a href="https://www.qwertydesign.ru/" class="footer__btn font-size-18" target="_blank">
+                Made in QD
+              </a>
+            </div>
+          </div>
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link" style="background-image: url(img/soc-fb.svg);">Facebook</a>
+            <a href="#" class="footer__soc-link" style="background-image: url(img/soc-ig.svg);">Instagram</a>
+          </div>
+        </div>
+        <button class="footer__up" data-href="top">
+          Наверх
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/index.min.js"></script>
+
+</body>
+</html>

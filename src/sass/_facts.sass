@@ -1,0 +1,122 @@
+.facts
+  padding-top: 22.125rem
+  padding-bottom: 16.4375rem
+  background: linear-gradient(180deg, #82356F 0%, #AB4C94 48.96%, #82356F 100%)
+  color: #fff
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -5px
+    height: 7.3125rem
+    background: url(../img/white-wave-2.svg) no-repeat center top / 100%
+  &__heading
+    position: relative
+    margin-bottom: 5.5625rem
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%, 0)
+      top: -6.125rem
+      width: 57.25rem
+      height: 19.5rem
+      background: url(../img/facts-bg.png) no-repeat center / 100%
+    &-text
+      position: relative
+  &__slider
+    position: relative
+    margin-bottom: 4.0625rem
+    &-arrows
+      display: none
+    &-img
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, 0)
+      width: auto
+      height: 37.1875rem
+    &-row
+      flex-wrap: wrap
+      height: auto
+      min-height: 37.1875rem
+      padding-top: 4.625rem
+  &__item
+    flex: 0 0 50%
+    max-width: 50%
+    margin-bottom: 7.375em
+    &:nth-child(odd)
+      padding-right: 15.0625rem
+      padding-left: 2.5rem
+      text-align: right
+      &:nth-last-child(2)
+        padding-right: 12.5rem
+        padding-left: 7.1875rem
+        margin-bottom: 0
+    &:nth-child(even)
+      padding-left: 15.0625rem
+      padding-right: 2.5rem
+      &:nth-last-child(1)
+        padding-left: 12.5rem
+        padding-right: 7.1875rem
+        margin-bottom: 0
+  .parallax
+    &:nth-child(1)
+      top: 16rem
+      left: 2.5rem
+      width: 12.375rem
+    &:nth-child(2)
+      right: 3.375rem
+      bottom: 16.4375rem
+      width: 11.3125rem
+  @media (max-width: 991.98px)
+    padding-top: 10rem
+    padding-bottom: 6.25rem
+    &::after
+      bottom: -2.125rem
+      left: 50%
+      right: auto
+      transform: translate(-50%, 0) scale(-1, 1)
+      width: 45.875rem
+      height: 4.875rem
+    &__heading
+      margin-bottom: 1.875rem
+      &::before
+        top: -2.4375rem
+        width: 100%
+        height: 6.125rem
+        background-image: url(../img/facts-bg-mobile.png)
+    &__slider
+      margin-bottom: 1.25rem
+      &-img
+        display: none
+      &-arrow
+        margin: 0 0.3125rem
+      &-arrows
+        display: flex
+        margin-bottom: 1.875rem
+      &-row
+        flex-wrap: nowrap
+        min-height: auto
+        height: 100%
+        padding-top: 0
+    &__item
+      flex: 0 0 auto
+      max-width: 100%
+      padding: 0
+      text-align: center
+      margin-bottom: 0
+      &:nth-child(odd)
+        padding: 0
+        text-align: center
+        &:nth-last-child(2)
+          padding: 0
+          text-align: center
+      &:nth-child(even)
+        padding: 0
+        text-align: center
+        &:nth-last-child(1)
+          padding: 0
+          text-align: center

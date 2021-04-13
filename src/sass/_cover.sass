@@ -1,0 +1,91 @@
+.cover
+  // min-height: 100vh
+  min-height: 67.5rem
+  padding-top: 23.375rem
+  padding-bottom: 10.125rem
+  background-color: $purple
+  background-position-y: bottom
+  background-position-x: left
+  background-size: 62.8125rem auto
+  background-repeat: no-repeat
+  color: #fff
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -1px
+    z-index: 2
+    height: 6rem
+    background: url(../img/purple-dark-wave-1.svg) no-repeat center bottom / 100%
+    pointer-events: none
+  &__container
+    z-index: 1
+  &__row
+    justify-content: space-between
+  &__heading
+    margin-bottom: 1.875rem
+  &__text
+    max-width: 81.33333%
+    margin-bottom: 3.125rem
+    &-wrap
+      flex: 0 0 53.57%
+      max-width: 53.57%
+      &--w-50
+        flex-basis: 50%
+        max-width: 50%
+  &__img
+    position: relative
+    margin-top: 4.3125rem
+    margin-left: auto
+    margin-right: auto
+    // filter: drop-shadow(0px 25px 50px #450D37)
+    max-width: 87.9%
+    &-wrap
+      position: relative
+      flex: 0 0 41.43%
+      max-width: 41.43%
+      margin-top: -5.3125rem
+      background: url(../img/cover-mounts.png) no-repeat center top / 100% auto
+      &--w-50
+        flex-basis: 50%
+        max-width: 50%
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 17.75rem
+        height: 16rem
+        background: url(../img/cover-nuts.png) no-repeat center / 100%
+        // filter: drop-shadow(0px 20px 50px #450D37)
+  @media (max-width: 991.98px)
+    min-height: auto
+    padding-top: 6rem
+    padding-bottom: 4.0625rem
+    text-align: center
+    // background-image: none!important
+
+    background: url(../img/cover-bg-2.svg) no-repeat left -2.25rem bottom -3.375rem / 38.4375rem 11.9375rem $purple!important
+    &__img
+      margin-top: 2.375rem
+      &.img-width
+        width: 14rem
+        margin-left: auto
+        margin-right: auto
+      &-wrap
+        flex-basis: 100%
+        max-width: 100%
+        margin-top: 0
+        margin-bottom: 0.5rem
+        &::after
+          bottom: -0.875rem
+          width: 9.8125rem
+          height: 8.875rem
+    &__text
+      max-width: 100%
+      margin-bottom: 1.25rem
+      &-wrap
+        order: 1
+        flex-basis: 100%
+        max-width: 100%

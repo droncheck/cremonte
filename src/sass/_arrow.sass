@@ -1,0 +1,35 @@
+.arrow
+  flex: 0 0 3.375rem
+  max-width: 3.375rem
+  width: 3.375rem
+  height: 3.375rem
+  border-radius: 50%
+  border: 1px solid $green
+  background-color: $green
+  background-repeat: no-repeat
+  background-position: center
+  background-size: auto 1.6875rem
+  pointer-events: auto
+  &.swiper-button-disabled
+    opacity: 0
+  &--prev
+    background-image: url(../img/prev.svg)
+  &--next
+    background-image: url(../img/next.svg)
+
+  @media (max-width: 991.98px)
+    flex: 0 0 2.25rem
+    max-width: 2.25rem
+    width: 2.25rem
+    height: 2.25rem
+    background-size: auto 0.9375rem
+
+.arrows
+  display: flex
+  align-items: center
+  justify-content: center
+  pointer-events: none
+  height: calc(3.375rem + 4px)
+
+  @media (max-width: 991.98px)
+    height: calc(2.25rem + 4px)

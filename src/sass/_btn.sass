@@ -1,0 +1,41 @@
+.btn
+  position: relative
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  min-width: 16.0625rem
+  height: 4.375rem
+  border-radius: 1.25rem
+  font-size: 1.375em
+  color: #fff
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 4.25rem
+    height: 3.4375rem
+    background: url(../img/leafs.svg) no-repeat center / 100%
+    transition: all 0.75s
+  &::after
+    content: ''
+    position: absolute
+    z-index: 0
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 1.25rem
+    background: $brown-light
+  &:hover,
+  &.active
+    color: #fff
+    &::before
+      top: -1.5625rem
+      left: -1.75rem
+  &__text
+    position: relative
+    z-index: 1
+  @media (max-width: 991.98px)
+    height: 3.25rem
+    font-size: 1.125rem

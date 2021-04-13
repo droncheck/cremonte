@@ -1,0 +1,234 @@
+.gains
+  padding-top: 10rem
+  padding-bottom: 14.375rem
+  background: $purple-dark
+  color: #ffffff
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: -1px
+    z-index: 2
+    height: 6rem
+    background: url(../img/white-wave-1.svg) no-repeat center bottom / 100%
+  &--light
+    background: $purple
+  &--other-wave
+    padding-bottom: 16.4375rem
+    &::after
+      bottom: -5px
+      height: 7.3125rem
+      background: url(../img/white-wave-2.svg) no-repeat center top / 100%
+  &__heading
+    margin-bottom: 6.75rem
+  &__slider
+
+    overflow: visible
+    &-arrows
+      position: absolute
+      z-index: 3
+      top: 4.375rem
+      left: -3.3125rem
+      right: -3.3125rem
+      display: flex
+      justify-content: space-between
+    &-wrap
+      position: relative
+      margin: 0 1.6875rem 8.3125rem
+      &:last-child
+        margin-bottom: 0
+    .gains__item
+      opacity: 0.5
+      &.swiper-slide-active
+        opacity: 1
+        & + .gains__item
+          opacity: 1
+          & + .gains__item
+            opacity: 1
+    &[data-slides-per-view="4"]
+      .gains__item
+        &.swiper-slide-active
+          & + .gains__item
+            & + .gains__item
+              & + .gains__item
+                opacity: 1
+  &__item
+    text-align: center
+    transition: opacity 0.25s
+    &-heading
+      margin-bottom: 0.625rem
+      &:last-child
+        margin-bottom: 0
+    &-img
+      position: relative
+      z-index: 2
+      max-height: 100%
+      // height: 100%
+      width: auto
+      &-circle
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border-radius: 50%
+        background-color: #fff
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        &::before
+          content: ''
+          position: absolute
+          top: -0.625rem
+          left: -0.625rem
+          right: -0.625rem
+          bottom: -0.625rem
+          border-radius: 50%
+          border: 2px solid $brown-middle
+          opacity: 0.5
+        &::after
+          content: ''
+          position: absolute
+          top: -1.25rem
+          left: -1.25rem
+          right: -1.25rem
+          bottom: -1.25rem
+          border-radius: 50%
+          border: 2px solid $brown-middle
+          opacity: 0.25
+
+      &-wrap
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+
+        width: 10.875rem
+        height: 10.875rem
+        padding: 2.5rem 1.5rem
+        margin: 0 auto 2.5rem
+        transition: all 0.25s
+        &::before,
+        &::after
+          content: ''
+          position: absolute
+          z-index: 0
+          width: 3.4375rem
+          height: 2.878rem
+          background: url(../img/leafs.svg) no-repeat center / 100%
+          transition: all 0.5s
+        &::before
+          top: 2.878rem
+          left: 3.4375rem
+        &::after
+          bottom: 2.878rem
+          right: 3.4375rem
+          transform: scale(1, -1)
+    &:hover
+      .gains__item-img-wrap
+        transform: scale(1.15)
+        &::before
+          top: -0.25rem
+          left: -2.5rem
+        &::after
+          bottom: -0.25rem
+          right: -2.5rem
+  .parallax
+    &:nth-child(1)
+      top: 1.5625rem
+      left: 2.5rem
+      width: 8.625rem
+    &:nth-child(2)
+      right: 2.5rem
+      bottom: 6.375rem
+      width: 10.5625rem
+  @media (max-width: 991.98px)
+    padding-top: 5.4375rem
+    padding-bottom: 6.0625rem
+    &::after
+      transform: scale(-1, 1)
+    &--other-wave
+      padding-bottom: 6.9375rem
+      &::after
+        bottom: -2.125rem
+        left: 50%
+        right: auto
+        transform: translate(-50%, 0) scale(-1, 1)
+        width: 45.875rem
+        height: 4.875rem
+    &__heading
+      margin-bottom: 2.8125rem
+    &__slider
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 1.25rem
+      &-wrap
+        margin-left: 0
+        margin-right: 0
+        margin-bottom: 1.25rem
+      &-arrow
+        margin: 0 0.3125rem
+      &-arrows
+        position: relative
+        left: auto
+        top: auto
+        right: auto
+        display: flex
+        justify-content: center
+        margin-bottom: 1.875rem
+      .gains__item
+        opacity: 0.5
+        &.swiper-slide-active
+          opacity: 1
+          & + .gains__item
+            opacity: 0.5
+            & + .gains__item
+              opacity: 0.5
+      &[data-slides-per-view="4"]
+        margin-left: 3.3125rem
+        margin-right: 3.3125rem
+        .gains__item
+          &.swiper-slide-active
+            & + .gains__item
+              & + .gains__item
+                & + .gains__item
+                  opacity: 0.5
+    &__item
+      &:hover
+        .gains__item-img-wrap
+          transform: scale(1)
+          &::before
+            top: 2.878rem
+            left: 3.4375rem
+          &::after
+            bottom: 2.878rem
+            right: 3.4375rem
+      &.swiper-slide-active
+        .gains__item-img-wrap
+          &::before
+            top: -0.25rem
+            left: -2.5rem
+          &::after
+            bottom: -0.25rem
+            right: -2.5rem
+        &:hover
+          .gains__item-img-wrap
+            &::before
+              top: -0.25rem
+              left: -2.5rem
+            &::after
+              bottom: -0.25rem
+              right: -2.5rem
+      &-img
+        // opacity: 0
+        &-wrap
+          width: 8.125rem
+          height: 8.125rem
+          padding: 1.5rem
+          margin-bottom: 2rem
+          transition: none
+          &::before,
+          &::after
+            // display: none

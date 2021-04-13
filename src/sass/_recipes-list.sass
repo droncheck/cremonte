@@ -1,0 +1,70 @@
+.recipes-list
+  padding-top: 8.4375rem
+  &__row
+    width: calc(100% + 1.25rem)
+    margin-right: -1.25rem
+    margin-bottom: 3.875rem
+  &__item
+    display: block
+    position: relative
+    flex: 0 0 calc(33.33333% - 1.25rem)
+    max-width: calc(33.33333% - 1.25rem)
+    margin-right: 1.25rem
+    margin-bottom: 1.25rem
+    border-radius: 1.25rem
+    transform: translateZ(0)
+    overflow: hidden
+    &-bg
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%) scale(1)
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      transition: all 10s
+      will-change: transform
+    &::before
+      content: ''
+      display: block
+      padding-top: 110%
+    &-caption
+      position: absolute
+      left: 0
+      right: 0
+      bottom: -100%
+      padding: 2.3125rem
+      text-align: center
+      color: $dark
+      background: #fff
+      transition: all 0.25s
+    &:hover,
+    &:focus
+      .recipes-list__item-bg
+        transform: translate(-50%, -50%) scale(1.25)
+      .recipes-list__item-caption
+        bottom: 0
+  .parallax
+    &:nth-child(1)
+      top: 2.5rem
+      left: 2.5rem
+      width: 9rem
+    &:nth-child(2)
+      bottom: 2.5rem
+      right: 2.5rem
+      width: 8.5625rem
+  @media (max-width: 991.98px)
+    padding-top: 4.5rem
+    &__row
+      width: 100%
+      margin-right: 0
+      margin-bottom: 1.625rem
+    &__item
+      margin-right: 0
+      flex-basis: 100%
+      max-width: 100%
+      &-caption
+        bottom: 0
+        padding: 1.6875rem

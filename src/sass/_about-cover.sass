@@ -1,0 +1,66 @@
+.about-cover
+  padding: 26.8125rem 0
+  background: #fff
+  overflow: hidden
+  &::before,
+  &::after
+    content: ''
+    position: absolute
+  &::before
+    z-index: 2
+    bottom: 0
+    left: 0
+    width: 38.0625rem
+    height: 26.875rem
+    background: url(../img/about-cover__img-2.svg) no-repeat left bottom / 100%
+  &::after
+    left: 0
+    right: 0
+    bottom: -1px
+    z-index: 2
+    height: 6rem
+    background: url(../img/purple-wave-1.svg) no-repeat center bottom / 100%
+  &__heading
+    margin-bottom: 1.875rem
+    color: $brown
+  &__text
+    color: $gray
+  &__main
+    max-width: 38.125rem
+  &__img
+    &-wrap
+      position: absolute
+      right: 0
+      bottom: 0
+      width: 70.125rem
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(90.06deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 36.64%)
+  @media (max-width: 991.98px)
+    padding-top: 22.8125rem
+    padding-bottom: 8.1875rem
+    text-align: center
+    &::before
+      bottom: -2.75rem
+      width: 100%
+      height: 12.0625rem
+    &__heading
+      margin-bottom: 1.25rem
+    &__img
+      &-wrap
+        top: 3.625em
+        bottom: auto
+        width: 100%
+        &::before
+          top: auto
+          left: 0
+          right: 0
+          bottom: -1px
+          z-index: 2
+          height: 6rem
+          background: url(../img/white-wave-1.svg) no-repeat center bottom / 100%

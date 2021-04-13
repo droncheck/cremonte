@@ -1,0 +1,68 @@
+.horeca
+  padding-top: 8.4375rem
+  color: #fff
+  &__heading
+    margin-bottom: 4.375rem
+  &__row
+    width: calc(100% + 1.25rem)
+    margin-right: -1.25rem
+    margin-bottom: 7.1875rem
+    &:last-child
+      margin-bottom: 0
+    .parallax
+      &--1
+        top: -5.1875rem
+        left: -14.125rem
+        width: 11.3125rem
+      &--2
+        top: -4.5rem
+        right: -14.125rem
+        width: 10.5625rem
+      &--3
+        top: -4.5rem
+        left: -14.125rem
+        width: 10.8125rem
+  &__item
+    display: block
+    flex: 0 0 calc(50% - 1.25rem)
+    max-width: calc(50% - 1.25rem)
+    margin-right: 1.25rem
+    margin-bottom: 1.25rem
+    padding: 4.75rem 3.625rem
+    border-radius: 1.25rem
+    color: $dark
+    background: #fff
+    &-heading
+      transition: all 0.25s
+    &-img
+      max-height: 100%
+      width: auto
+      &-wrap
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 22.375rem
+        margin-bottom: 1.6875rem
+    &:hover
+      .horeca__item-heading
+        text-decoration: underline
+        color: $brown-light
+  @media (max-width: 991.98px)
+    &__heading
+      margin-bottom: 1.875rem
+    &__row
+      width: calc(100% + 0.625rem)
+      margin-right: -0.625rem
+      margin-bottom: 4.5rem
+    &__item
+      flex-basis: calc(50% - 0.625rem)
+      max-width: calc(50% - 0.625rem)
+      margin-right: 0.625rem
+      padding: 1.875rem 0.75rem 1rem
+      &-heading
+        font-size: 0.75rem
+        font-weight: 400
+      &-img
+        &-wrap
+          height: 7rem
+          margin-bottom: 0.8125rem

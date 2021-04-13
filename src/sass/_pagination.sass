@@ -1,0 +1,42 @@
+.pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  &__prev,
+  &__next
+    flex: 0 0 0.8125rem
+    max-width: 0.8125rem
+    height: 1.4375rem
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+  &__prev
+    margin-right: 0.3125rem
+    background-image: url(../img/prev.svg)
+  &__next
+    margin-left: 0.3125rem
+    background-image: url(../img/next.svg)
+  &__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    flex: 0 0 3.5625rem
+    max-width: 3.5625rem
+    height: 3.5625rem
+    margin: 0 0.625rem
+    border-radius: 50%
+    border: 1.5px solid $brown-light
+    color: #fff
+    &.active
+      background: $brown-light
+  @media (max-width: 991.98px)
+    &__prev
+      margin-right: auto
+    &__next
+      margin-left: auto
+    &__btn
+      flex: 0 0 2.625rem
+      max-width: 2.625rem
+      height: 2.625rem
+      margin: 0 0.46875rem
+      font-size: 1.375em
